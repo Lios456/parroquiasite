@@ -134,7 +134,6 @@
     </symbol>
   </svg>
 
-
   <section id="billboard">
     <div class="row align-items-center g-0 bg-secondary">
       <div class="col-lg-6">
@@ -168,7 +167,7 @@
       </div>
     </div>
   </section>
-
+  <hr>
   <section id="brands" class="padding-small">
     <div class="container">
       <h6 class="fst-italic text-capitalize mb-4">  Párrocos
@@ -192,7 +191,97 @@
       </div>
     </div>
   </section>
-
+  <hr>
+  <section id="blog">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <h6><span class="text">|</span>Noticias</h6>
+          <h3 class="display-6 fw-semibold">Recientes</h3>
+        </div>
+        <div>
+          <a href="#" class="btn btn-primary btn-slide hover-slide-right">
+            <span>Ver Todas</span>
+          </a>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="card-item">
+            <div class="card border-0 bg-transparent">
+              <div class="card-image position-relative">
+                <a href="#"><img src="images/blog1.jpg" alt="post-img" class="post-image img-fluid"></a>
+              </div>
+            </div>
+            <div class="card-body p-0 mt-2">
+              <span class="text-capitalize text-black-50">Jan 30, 2024</span>
+              <a href="#">
+                <h5 class="mt-2"></h5>Best HVAC in Texas</h5>
+              </a>
+              <p>Elit adipi massa diam in dignissim. Sagittis pulvinar ut dis venenatis nunc nunc vitae aliquam
+                vestibulum... <span><a href="#" class="text-decoration-underline fst-italic">Read
+                    more</a></span> </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="card-item">
+            <div class="card border-0 bg-transparent">
+              <div class="card-image position-relative">
+                <a href="index.html"><img src="images/blog2.jpg" alt="post-img" class="post-image img-fluid"></a>
+              </div>
+            </div>
+            <div class="card-body p-0 mt-2">
+              <span class="text-capitalize text-black-50">Jan 30, 2024</span>
+              <h5 class="mt-2">
+                <a href="index.html">HVAC Maintenance Cost</a>
+              </h5>
+              <p>Elit adipi massa diam in dignissim. Sagittis pulvinar ut dis venenatis nunc nunc vitae aliquam
+                vestibulum... <span><a href="index.html" class="text-decoration-underline fst-italic">Read
+                    more</a></span> </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="card-item">
+            <div class="card border-0 bg-transparent">
+              <div class="card-image position-relative">
+                <a href="index.html"><img src="images/blog3.jpg" alt="post-img" class="post-image img-fluid"></a>
+              </div>
+            </div>
+            <div class="card-body p-0 mt-2">
+              <span class="text-capitalize text-black-50">Jan 30, 2024</span>
+              <h5 class="mt-2">
+                <a href="index.html">Why to clean AC of Home</a>
+              </h5>
+              <p>Elit adipi massa diam in dignissim. Sagittis pulvinar ut dis venenatis nunc nunc vitae aliquam
+                vestibulum... <span><a href="index.html" class="text-decoration-underline fst-italic">Read
+                    more</a></span> </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="card-item">
+            <div class="card border-0 bg-transparent">
+              <div class="card-image position-relative">
+                <a href="index.html"><img src="images/blog4.jpg" alt="post-img" class="post-image img-fluid"></a>
+              </div>
+            </div>
+            <div class="card-body p-0 mt-2">
+              <span class="text-capitalize text-black-50">Jan 30, 2024</span>
+              <h5 class="mt-2">
+                <a href="index.html">Tips for cleaning AC</a>
+              </h5>
+              <p>Elit adipi massa diam in dignissim. Sagittis pulvinar ut dis venenatis nunc nunc vitae aliquam
+                vestibulum... <span><a href="index.html" class="text-decoration-underline fst-italic">Read
+                    more</a></span> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<hr>
   <section id="about-us">
     <div class="container">
       <div class="row g-md-5 align-items-center">
@@ -472,37 +561,8 @@
       </div>
     </div>
   </section>
+<!-- CONTACTO -->
 
-  <section id="quote" class="padding-small">
-    <div class="container text-center">
-      <h3 class="display-6 fw-semibold mb-4">Ask with our Specialists</h3>
-      <form class="contact-form row mt-5">
-        <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
-          <input type="text" name="name" placeholder="Full Name*" class="form-control w-100 ps-3 py-2 rounded-0"
-            required>
-        </div>
-        <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
-          <input type="email" name="email" placeholder="Email*" class="form-control w-100 ps-3 py-2 rounded-0" required>
-        </div>
-        <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
-          <input type="text" name="phone" placeholder="Phone*" class="form-control w-100 ps-3 py-2 rounded-0" required>
-        </div>
-        <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
-          <input type="text" name="address" placeholder="Address*" class="form-control w-100 ps-3 py-2 rounded-0"
-            required>
-        </div>
-        <div class="col-md-12 col-sm-12 mb-4">
-          <textarea class="form-control w-100 ps-3 py-2 rounded-0" rows="6" type="text" name="message"
-            placeholder="Message"></textarea>
-        </div>
-        <div class="col-12">
-          <a href="index.html" class="btn btn-primary btn-slide hover-slide-right mt-4">
-            <span>Send now</span>
-          </a>
-        </div>
-      </form>
-    </div>
-  </section>
 
   <section id="project">
     <div class="container">
@@ -714,96 +774,6 @@
     </div>
   </section>
 
-  <section id="blog">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
-        <div>
-          <h6><span class="text-primary">|</span>Blog</h6>
-          <h3 class="display-6 fw-semibold">Recent Posts</h3>
-        </div>
-        <div>
-          <a href="index.html" class="btn btn-primary btn-slide hover-slide-right">
-            <span>Read all blogs</span>
-          </a>
-        </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <div class="card-item">
-            <div class="card border-0 bg-transparent">
-              <div class="card-image position-relative">
-                <a href="index.html"><img src="images/blog1.jpg" alt="post-img" class="post-image img-fluid"></a>
-              </div>
-            </div>
-            <div class="card-body p-0 mt-2">
-              <span class="text-capitalize text-black-50">Jan 30, 2024</span>
-              <a href="index.html">
-                <h5 class="mt-2"></h5>Best HVAC in Texas</h5>
-              </a>
-              <p>Elit adipi massa diam in dignissim. Sagittis pulvinar ut dis venenatis nunc nunc vitae aliquam
-                vestibulum... <span><a href="index.html" class="text-decoration-underline fst-italic">Read
-                    more</a></span> </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <div class="card-item">
-            <div class="card border-0 bg-transparent">
-              <div class="card-image position-relative">
-                <a href="index.html"><img src="images/blog2.jpg" alt="post-img" class="post-image img-fluid"></a>
-              </div>
-            </div>
-            <div class="card-body p-0 mt-2">
-              <span class="text-capitalize text-black-50">Jan 30, 2024</span>
-              <h5 class="mt-2">
-                <a href="index.html">HVAC Maintenance Cost</a>
-              </h5>
-              <p>Elit adipi massa diam in dignissim. Sagittis pulvinar ut dis venenatis nunc nunc vitae aliquam
-                vestibulum... <span><a href="index.html" class="text-decoration-underline fst-italic">Read
-                    more</a></span> </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <div class="card-item">
-            <div class="card border-0 bg-transparent">
-              <div class="card-image position-relative">
-                <a href="index.html"><img src="images/blog3.jpg" alt="post-img" class="post-image img-fluid"></a>
-              </div>
-            </div>
-            <div class="card-body p-0 mt-2">
-              <span class="text-capitalize text-black-50">Jan 30, 2024</span>
-              <h5 class="mt-2">
-                <a href="index.html">Why to clean AC of Home</a>
-              </h5>
-              <p>Elit adipi massa diam in dignissim. Sagittis pulvinar ut dis venenatis nunc nunc vitae aliquam
-                vestibulum... <span><a href="index.html" class="text-decoration-underline fst-italic">Read
-                    more</a></span> </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <div class="card-item">
-            <div class="card border-0 bg-transparent">
-              <div class="card-image position-relative">
-                <a href="index.html"><img src="images/blog4.jpg" alt="post-img" class="post-image img-fluid"></a>
-              </div>
-            </div>
-            <div class="card-body p-0 mt-2">
-              <span class="text-capitalize text-black-50">Jan 30, 2024</span>
-              <h5 class="mt-2">
-                <a href="index.html">Tips for cleaning AC</a>
-              </h5>
-              <p>Elit adipi massa diam in dignissim. Sagittis pulvinar ut dis venenatis nunc nunc vitae aliquam
-                vestibulum... <span><a href="index.html" class="text-decoration-underline fst-italic">Read
-                    more</a></span> </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section id="features" class="padding-small">
     <div class="container">
       <div class="row">
@@ -903,4 +873,3 @@
 
 <?php include 'footer.php' ?>
 
-</html>

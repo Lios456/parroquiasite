@@ -96,7 +96,7 @@
                 <a class="nav-link p-0" href="index.html">Catequesis</a>
               </li>
               <li class="nav-item px-3 py-1 py-lg-0">
-                <a class="nav-link p-0" href="index.html">Contacto</a>
+                <a class="nav-link p-0" href="contacto.php">Contacto</a>
               </li>
               <li class="nav-item search-dropdown py-3 py-lg-0 ms-3 ms-lg-5 dropdown">
                 <a class="nav-link p-0 search dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
