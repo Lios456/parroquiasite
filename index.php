@@ -288,16 +288,31 @@
         <div class="col-lg-5">
           <div class="imageblock position-relative">
           <video class="img-fluid" src="videos/video1.mp4" autoplay loop muted>
-              Tu navegador no soporta la reproducción de videos.
           </video>
 
-            <div class="video-player position-absolute top-50 start-50 translate-middle">
-              <a type="button" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/W_tIumKa8VY"
-                data-bs-target="#myModal" class="play-btn position-relative">
+          <div class="video-player position-absolute top-50 start-50 translate-middle">
+              <a type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="play-btn position-relative">
                 <svg class="play-icon text-primary my-3" width="80" height="80">
                   <use xlink:href="#play-button"></use>
                 </svg>
+              </a>
             </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalLabel">Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <video class="img-fluid" src="videos/video1.mp4" autoplay loop muted controls></video>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             </a>
           </div>
         </div>
@@ -313,7 +328,7 @@
           <p><strong>- Servir a la Comunidad</strong></p>
           <p><strong>- Promover la Unidad</strong></p>
 
-          <a href="index.html" class="btn btn-primary btn-slide hover-slide-right mt-4">
+          <a href="index.php" class="btn btn-primary btn-slide hover-slide-right mt-4">
             <span>Más sobre nosotros</span>
           </a>
         </div>
