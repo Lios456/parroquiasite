@@ -198,7 +198,10 @@
       <div class="row g-md-5 align-items-center">
         <div class="col-lg-5">
           <div class="imageblock position-relative">
-            <img class="img-fluid" src="images/about.png" alt="img">
+          <video class="img-fluid" src="videos/video1.mp4" autoplay loop muted>
+              Tu navegador no soporta la reproducción de videos.
+          </video>
+
             <div class="video-player position-absolute top-50 start-50 translate-middle">
               <a type="button" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/W_tIumKa8VY"
                 data-bs-target="#myModal" class="play-btn position-relative">
@@ -210,20 +213,19 @@
           </div>
         </div>
         <div class="col-lg-7 mt-5">
-          <h6><span class="text-primary">|</span>About Us</h6>
-          <h3 class="display-6 fw-semibold mb-4">We are HVAC Service Professional</h3>
-          <p>Welcome to our HVAC Agency, where comfort meets efficiency! We take pride in being a leading provider of
-            <span class="fw-semibold ">heating, ventilation, and air conditioning (HVAC)</span> solutions for
-            residential, commercial, and industrial clients. Our team of dedicated professionals is committed to
-            delivering top-notch services, indoor environment remains comfortable.
+          <h6><span class="text-primary">|</span>Sobre Nosotros</h6>
+          <h3 class="display-6 fw-semibold mb-4">Ven y descubre el camino de la salvacón y de la fe</h3>
+          <p>La Parroquia Eclesiástica "Santísima Trinidad" La Laguna es una comunidad vibrante y acogedora, dedicada a la fe cristiana y al servicio de los demás. Nuestra misión es ser un lugar de encuentro y apoyo espiritual para todos aquellos que buscan acercarse a Dios y fortalecer su relación con Él.           
           </p>
-          <p class="fw-semibold m-0">Our Mission</p>
-          <p>At our HVAC Agency, our mission is to create comfortable, healthy, and energy-efficient spaces for our
-            valued customers. We strive to enhance your quality of life by delivering reliable HVAC services tailored to
-            your specific needs. Whether it's installing cutting-edge HVAC systems, conducting routine maintenance, or
-            providing swift repairs, we are your trusted partner.</p>
+          <p class="fw-semibold m-0">Nuestra misión</p>
+          <p>Aspiramos a ser una comunidad vibrante y compasiva que refleje el amor y la misericordia de Dios. Nuestra visión es:
+          </p>
+          <p><strong>- Crecer en Fe</strong></p>
+          <p><strong>- Servir a la Comunidad</strong></p>
+          <p><strong>- Promover la Unidad</strong></p>
+
           <a href="index.html" class="btn btn-primary btn-slide hover-slide-right mt-4">
-            <span>More About us</span>
+            <span>Más sobre nosotros</span>
           </a>
         </div>
       </div>
