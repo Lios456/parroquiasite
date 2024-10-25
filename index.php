@@ -171,23 +171,23 @@
 
   <section id="brands" class="padding-small">
     <div class="container">
-      <h6 class="fst-italic text-capitalize mb-4"> <span class="text-primary">|</span> We install or repair all brands
+      <h6 class="fst-italic text-capitalize mb-4">  Párrocos
       </h6>
       <div class="row">
         <div class="col my-4">
-          <a href="#"><img src="images/brand1.png" class="brand-image img-fluid"></a>
+          <a href="">Mons. Lorenzo Voltonili</a>
         </div>
         <div class="col my-4">
-          <a href="#"><img src="images/brand2.png" class="brand-image img-fluid"></a>
+          <a href="">P. Victoriano Naranjo</a>
         </div>
         <div class="col my-4">
-          <a href="#"><img src="images/brand3.png" class="brand-image img-fluid"></a>
+          <a href="">P. Luis Jácome</a>
         </div>
         <div class="col my-4">
-          <a href="#"><img src="images/brand4.png" class="brand-image img-fluid"></a>
+          <a href="">P. José Luis Tapia</a>
         </div>
         <div class="col my-4">
-          <a href="#"><img src="images/brand5.png" class="brand-image img-fluid"></a>
+          <a href="">P. Cristian Santana</a>
         </div>
       </div>
     </div>
