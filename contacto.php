@@ -33,4 +33,12 @@ include 'head.php';
   </section>
 <?php
 include 'footer.php';
+include 'Models/noticia.php';
+try{
+  $a = new Noticia();
+  //$a->insertar(['titulo'=>'Hola','descripcion'=>'Noticia de Prueba']);
+  $a->listar() ;
+}catch(Exception $e){
+  echo $e->getMessage();
+}
 ?>
