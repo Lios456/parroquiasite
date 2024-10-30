@@ -21,7 +21,7 @@ public function insertar($data){
 public function listar(){
     $noticias = ORM::for_table('noticias')->find_array();
     foreach($noticias as $noticia){
-        echo '<div class="card"> <div class="card-body">' . 
+        echo '<div class="card w-50"> <div class="card-body">' . 
         '<h5 class="card-title">' . $noticia['titulo_not'] . '</h5>'.
         '<p class="card-text">'. $noticia['descripcion_not'] . '</p>'.
         '</div></div>';   

@@ -31,6 +31,12 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 
+  <!-- SUMMERNOTE ============================================== -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.9.0/dist/summernote-lite.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.9.0/dist/summernote-lite.min.js"></script>
+
+
 </head>
 
 <header id="header">
@@ -71,8 +77,15 @@
           </div>
           <div class="offcanvas-body align-items-center justify-content-center">
             <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item px-5 py-1 py-lg-0">
+                <a href="#" class="btn btn-primary btn-slide hover-slide-right" style="width:5cm;font-size:12px">
+                  <span>Cambio de Fecha</span>
+                  <br>
+                  <span>Celebración Religiosa</span>
+                </a>
+              </li>
               <li class="nav-item px-3 py-1 py-lg-0">
-                <a class="nav-link active p-0" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active p-0" aria-current="page" href="index.php">Home</a>
               </li>
               <li class="nav-item px-3 py-1 py-lg-0 dropdown">
                 <a class="nav-link p-0 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
@@ -87,13 +100,13 @@
                 </ul>
               </li>
               <li class="nav-item px-3 py-1 py-lg-0">
-                <a class="nav-link p-0" href="index.html">Sobre Nosotros</a>
+                <a class="nav-link p-0" href="about.php">Sobre Nosotros</a>
               </li>
               <li class="nav-item px-3 py-1 py-lg-0">
-                <a class="nav-link p-0" href="index.html">Noticias</a>
+                <a class="nav-link p-0" href="noticias.php">Noticias</a>
               </li>
               <li class="nav-item px-3 py-1 py-lg-0">
-                <a class="nav-link p-0" href="index.html">Catequesis</a>
+                <a class="nav-link p-0" href="catequesis.php">Catequesis</a>
               </li>
               <li class="nav-item px-3 py-1 py-lg-0">
                 <a class="nav-link p-0" href="contacto.php">Contacto</a>
