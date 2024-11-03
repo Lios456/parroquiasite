@@ -48,7 +48,7 @@
           <a href="">Mons. Lorenzo Voltonili</a>
         </div>
         <div class="col my-4">
-          <a href="">P. Victoriano Naranjo</a>
+          <a href="">Mons. Victoriano Naranjo</a>
         </div>
         <div class="col my-4">
           <a href="">P. Emiliano Jácome</a>
@@ -58,6 +58,15 @@
         </div>
         <div class="col my-4">
           <a href="">P. Cristian Santana</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h6 class="fst-italic text-capitalize mb-4">  Vicario
+      </h6>
+      <div class="row">
+        <div class="col my-4">
+          <a href="">P. Luis Gutiérrez</a>
         </div>
       </div>
     </div>
