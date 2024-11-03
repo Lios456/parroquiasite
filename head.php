@@ -85,7 +85,7 @@
                 </a>
               </li>
               <li class="nav-item px-3 py-1 py-lg-0">
-                <a class="nav-link active p-0" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active p-0" aria-current="page" href="index.php  ">Home</a>
               </li>
               <li class="nav-item px-3 py-1 py-lg-0 dropdown">
                 <a class="nav-link p-0 dropdown-toggle" data-bs-toggle="dropdown" href="index.php" role="button"
@@ -100,13 +100,13 @@
                 </ul>
               </li>
               <li class="nav-item px-3 py-1 py-lg-0">
-                <a class="nav-link p-0" href="index.html">Sobre Nosotros</a>
+                <a class="nav-link p-0" href="about.php">Sobre Nosotros</a>
               </li>
               <li class="nav-item px-3 py-1 py-lg-0">
-                <a class="nav-link p-0" href="index.html">Noticias</a>
+                <a class="nav-link p-0" href="noticias.php">Noticias</a>
               </li>
               <li class="nav-item px-3 py-1 py-lg-0">
-                <a class="nav-link p-0" href="index.html">Catequesis</a>
+                <a class="nav-link p-0" href="catequesis.php">Catequesis</a>
               </li>
               <li class="nav-item px-3 py-1 py-lg-0">
                 <a class="nav-link p-0" href="contacto.php">Contacto</a>
