@@ -6,7 +6,7 @@ class Persona extends ORM{
     public $apellido1;
     public $apellido2;
     public $celular;
-
+    public $imagen;
     
 }
 

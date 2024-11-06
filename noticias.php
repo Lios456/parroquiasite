@@ -14,8 +14,9 @@ try{
 ?>
 </div>
 <div class="d-flex justify-content-center">
-<form action="noticia.php" method="post">
+<form action="Models/noticia.php" method="post" name="noticiaform">
 <div id="summernote" ></div>
+<button type="submit">Enviar</button>
 </form>
 </div>
 

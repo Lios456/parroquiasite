@@ -78,10 +78,8 @@
           <div class="offcanvas-body align-items-center justify-content-center">
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item px-5 py-1 py-lg-0">
-                <a href="#" class="btn btn-primary btn-slide hover-slide-right" style="width:5cm;font-size:12px">
-                  <span>Cambio de Fecha</span>
-                  <br>
-                  <span>Celebración Religiosa</span>
+                <a href="#" class="btn btn-primary btn-slide hover-slide-right" style="width:100%;font-size:12px">
+                  <span>Cambio de Fecha Celebración Religiosa</span>
                 </a>
               </li>
               <li class="nav-item px-3 py-1 py-lg-0">

@@ -1,5 +1,5 @@
 <?php
-include 'librerias/idiorm/idiorm.php';
+include 'idiorm/idiorm.php';
 
 ORM::configure('mysql:host=localhost;dbname=parroquia');
 ORM::configure('username', 'root');
