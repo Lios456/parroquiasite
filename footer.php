@@ -74,32 +74,6 @@
             </ul>
           </div>
           <div class="footer-menu">
-            <h5 class=" widget-title py-2 mt-4 fw-semibold">Payment Options</h5>
-            <ul class="payment-links d-flex flex-wrap list-unstyled">
-              <li class="payment me-3">
-                <a href="#">
-                  <svg class=" me-1" width="26" height="26">
-                    <use xlink:href="#visa"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="payment me-3">
-                <a href="#">
-                  <svg class=" me-1" width="26" height="26">
-                    <use xlink:href="#mastercard"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="payment me-3">
-                <a href="#">
-                  <svg class=" me-1" width="26" height="26">
-                    <use xlink:href="#paypal"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-menu">
             <h5 class=" widget-title py-2 mt-4 fw-semibold">Social Link</h5>
             <ul class="social-links d-flex flex-wrap list-unstyled">
               <li class="social me-3">

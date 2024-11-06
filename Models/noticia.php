@@ -5,6 +5,10 @@ ORM::configure('mysql:host=localhost;dbname=parroquia');
 ORM::configure('username', 'root');
 ORM::configure('password', '');
 class Noticia extends ORM{
+    public $titulo;
+    public $detalle;
+    public $fecha;
+    public $autor;
 public function __construct(){
     $total_noticias = ORM::for_table('noticias')->count();
     echo '<h1>Actualmente hay ' . $total_noticias . ' noticias en la bdd</h1>';
