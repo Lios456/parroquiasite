@@ -5,6 +5,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
   <div class="container padding-small">
       <div class="row flex-wrap justify-content-between">
@@ -77,7 +78,7 @@
             <h5 class=" widget-title py-2 mt-4 fw-semibold">Social Link</h5>
             <ul class="social-links d-flex flex-wrap list-unstyled">
               <li class="social me-3">
-                <a href="#">
+                <a href="https://www.facebook.com/parroquiasantisimatrinidad.lalagunalatacunga">
                   <svg class=" me-1" width="24" height="24">
                     <use xlink:href="#facebook"></use>
                   </svg>

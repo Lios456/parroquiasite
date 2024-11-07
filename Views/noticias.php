@@ -2,7 +2,8 @@
 include 'head.php';
 include 'Models/noticia.php';
 ?>
-<div class="contente d-flex justify-content-center">
+
+<div class="content">
 <?php
 try{
   $a = new Noticia();
@@ -13,9 +14,12 @@ try{
 }
 ?>
 </div>
+<br><br><br><br><br>
+<center><h1 class="h1">Ingreso de noticias</h1></center>
 <div class="d-flex justify-content-center">
-<form action="Models/noticia.php" method="post" name="noticiaform">
-<div id="summernote" ></div>
+<form action="Controllers/agregarnoticia.php" method="post" name="noticiaform">
+  <input type="text" class="form-control" name="titulo" placeholder="Título">
+<textarea id="summernote" name="detalle"></textarea>
 <button type="submit">Enviar</button>
 </form>
 </div>

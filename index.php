@@ -51,7 +51,7 @@
           <a href="">Mons. Victoriano Naranjo</a>
         </div>
         <div class="col my-4">
-          <a href="">P. Emiliano Jácome</a>
+          <a href="">✚ P. Emiliano Jácome ✚</a>
         </div>
         <div class="col my-4">
           <a href="">P. José Luis Tapia</a>
