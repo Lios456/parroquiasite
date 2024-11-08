@@ -1,7 +1,8 @@
 <?php
-require_once __DIR__ . '/../routes.php';
+session_start();
 include 'head.php';
 include __DIR__ . '/../Models/noticia.php';
+require_once __DIR__ . '/../routes.php';
 ?>
 
 <div class="container row">
@@ -21,7 +22,7 @@ try{
 <form action="<?php echo BASE_URL . '/Controllers/agregarnoticia.php' ?>" method="post" name="noticiaform">
   <input type="text" class="form-control" name="titulo" placeholder="Título">
 <textarea id="summernote" name="detalle"></textarea>
-<button type="submit">Enviar</button>
+<button type="submit" class="btn btn-success">Enviar</button>
 </form>
 </div>
 

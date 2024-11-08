@@ -147,5 +147,24 @@ require_once __DIR__ . '/../routes.php';
       </div>
     </div>
 </footer>
+<script>
+    <?php if (isset($_SESSION['toast_message'])): ?>
+        Toastify({
+            text: "<?php echo addslashes($_SESSION['toast_message']); ?>",
+            duration: 3000,
+            gravity: "top",
+            position: "right",
+            style: {
+                background: "<?php echo ($_SESSION['toast_type'] === 'success') ? 'linear-gradient(to right, #00b09b, #96c93d)' : 'linear-gradient(to right, #ff5f6d, #ffc371)'; ?>"
+            },
+        }).showToast();
+        
+        <?php
+        // Limpia la sesión para evitar que el mensaje se repita
+        unset($_SESSION['toast_message']);
+        unset($_SESSION['toast_type']);
+        ?>
+    <?php endif; ?>
+</script>
 
 </html>

@@ -1,5 +1,7 @@
 <?php
 include __DIR__ . "/../Models/noticia.php";
+include __DIR__ . "/../routes.php";
+session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $noticia = new Noticia();
     $noticia->titulo = $_POST["titulo"] ?? null;
@@ -7,25 +9,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $noticia->fecha = date("Y-m-d");
     //$noticia->autor = $_POST["autor"] ?? null;
 
-    if ($noticia->insertar($noticia)) {
-        echo '<script>'. 
-            'Toastify({
-                        text: "Éxito al registrar la noticia",
-                        duration: 500,
-                        newWindow: true,
-                        close: true,
-                        gravity: "top",
-                        position: "right",
-                        stopOnFocus: true, // Prevents dismissing of toast on hover
-                        style: {
-                            background: "linear-gradient(to right, #00b09b, #96c93d)",
-                        },
-                        onClick: function(){} // Callback after click
-                    }).showToast();' . 
-                    '</script>';
-    } else {
-        echo "Fallo al registrar la noticia";
+    try{
+        if ($noticia->insertar($noticia)) {
+            $_SESSION['toast_message'] = "La noticia fue registrada correctamente";
+            $_SESSION['toast_type'] = "success";
+        } else {
+            $_SESSION['toast_message'] = "La noticia no fue registrada";
+            $_SESSION['toast_type'] = "error";
+        }
+    }catch(Exception $e){
+        $_SESSION['toast_message'] = $e->getMessage();
+            $_SESSION['toast_type'] = "error";
     }
-} else {
-    echo "La noticia no se ha podido subir";
+    header("Location: " . BASE_URL . "/Views/noticias.php");
+    exit();
 }
+
+?>
