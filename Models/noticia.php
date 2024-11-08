@@ -1,5 +1,5 @@
 <?php
-include("dbconfig.php");
+include "dbconfig.php";
 
 class Noticia{
     public $id;
@@ -26,11 +26,39 @@ public function listar(){
     $noticias = ORM::for_table('noticias')->order_by_desc('fecha_not')->find_array();
     foreach($noticias as $noticia){
         // retorna una tarjeta de bootstrap
-        echo '<center><div class="card w-50"> <div class="card-body">' . 
-        '<h5 class="card-title">' . $noticia['titulo_not'] . '</h5>'.
-        '<p class="card-text">'. $noticia['descripcion_not'] . '</p>'.
-        '<p class="card-text">Fecha:  ' . $noticia['fecha_not'] . '</p>'.
-        '</div></div></center>';   
+        echo '<div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="card-item">
+            <div class="card-body p-0 mt-2">
+              <span class="text-capitalize text-black-50">' . $noticia['fecha_not'] . '</span>
+              <h5 class="mt-2">
+                <a href="index.html">'.$noticia['titulo_not'].'</a>
+              </h5>
+              <p>'.$noticia['descripcion_not'].' <span><a href="index.html" class="text-decoration-underline fst-italic">Leer Más</a></span> </p>
+            </div>
+          </div>
+        </div>';   
+    }
+}
+
+public function listar_recientes(){
+    $noticias = ORM::for_table('noticias')->order_by_desc('fecha_not')->find_result_set();
+    $con = 0;
+    foreach($noticias as $noticia){
+        // retorna una tarjeta de bootstrap
+        if($con < 4){
+        echo '<div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <div class="card-item">
+            <div class="card-body p-0 mt-2">
+              <span class="text-capitalize text-black-50">' . $noticia['fecha_not'] . '</span>
+              <h5 class="mt-2">
+                <a href="index.html">'.$noticia['titulo_not'].'</a>
+              </h5>
+              <p>'.$noticia['descripcion_not'].' <span><a href="index.html" class="text-decoration-underline fst-italic">Leer Más</a></span> </p>
+            </div>
+          </div>
+        </div>';
+        }   
+        $con++;
     }
 }
 

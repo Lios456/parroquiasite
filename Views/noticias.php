@@ -1,5 +1,8 @@
 <?php
-include 'head.php';
+require_once "../routes.php";
+echo BASE_URL;
+echo HEAD;
+include HEAD;
 include 'Models/noticia.php';
 ?>
 
@@ -34,5 +37,5 @@ try{
       });
     </script>
 <?php
-include 'footer.php';
+include "footer.php";
 ?>

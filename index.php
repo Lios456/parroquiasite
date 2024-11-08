@@ -1,7 +1,6 @@
 <?php
-  include 'head.php';
+  include "Views/head.php";
 ?>
-<body>
 
 
   <section id="billboard">
@@ -10,30 +9,10 @@
         <div class="m-4 p-4 m-lg-5 p-lg-5">
           <h3 class="fw-bold h3 text-white">Diócesis de Latacunga</h3>
           <h2 class="display-4 fw-bold text-white my-4">Parroquia Eclesiástica "Santísima Trinidad" La Laguna</h2>
-          <ul class="info d-flex flex-wrap align-items-center list-unstyled">
-            <li class="fw-medium text-white d-flex align-items-center me-4">
-              <svg class="text-primary me-1" width="20" height="20">
-                <use xlink:href="#check-circle"></use>
-              </svg> Servicing
-            </li>
-            <li class="fw-medium text-white d-flex align-items-center me-4">
-              <svg class="text-primary me-1" width="20" height="20">
-                <use xlink:href="#check-circle"></use>
-              </svg> Repairs
-            </li>
-            <li class="fw-medium text-white d-flex align-items-center me-4">
-              <svg class="text-primary me-1" width="20" height="20">
-                <use xlink:href="#check-circle"></use>
-              </svg> Installation
-            </li>
-          </ul>
-          <a href="index.html" class="btn btn-light btn-bg btn-slide hover-slide-right mt-4">
-            <span>Book Appointment</span>
-          </a>
         </div>
       </div>
       <div class="col-lg-6">
-        <img src="images\iglesia\17.jpg" alt="img" class="img-fluid">
+        <img src="Views/images/iglesia/17.jpg" alt="img" class="img-fluid">
       </div>
     </div>
   </section>
@@ -72,6 +51,8 @@
     </div>
   </section>
   <hr>
+
+<!-- SECCIÓN DE NOTICIAS -->
   <section id="blog">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center">
@@ -80,84 +61,17 @@
           <h3 class="display-6 fw-semibold">Recientes</h3>
         </div>
         <div>
-          <a href="#" class="btn btn-primary btn-slide hover-slide-right">
+          <a href="Views/noticias.php" class="btn btn-primary btn-slide hover-slide-right">
             <span>Ver Todas</span>
           </a>
         </div>
       </div>
       <div class="row mt-5">
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <div class="card-item">
-            <div class="card border-0 bg-transparent">
-              <div class="card-image position-relative">
-                <a href="#"><img src="images/blog1.jpg" alt="post-img" class="post-image img-fluid"></a>
-              </div>
-            </div>
-            <div class="card-body p-0 mt-2">
-              <span class="text-capitalize text-black-50">Jan 30, 2024</span>
-              <a href="#">
-                <h5 class="mt-2"></h5>Best HVAC in Texas</h5>
-              </a>
-              <p>Elit adipi massa diam in dignissim. Sagittis pulvinar ut dis venenatis nunc nunc vitae aliquam
-                vestibulum... <span><a href="#" class="text-decoration-underline fst-italic">Read
-                    more</a></span> </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <div class="card-item">
-            <div class="card border-0 bg-transparent">
-              <div class="card-image position-relative">
-                <a href="index.html"><img src="images/blog2.jpg" alt="post-img" class="post-image img-fluid"></a>
-              </div>
-            </div>
-            <div class="card-body p-0 mt-2">
-              <span class="text-capitalize text-black-50">Jan 30, 2024</span>
-              <h5 class="mt-2">
-                <a href="index.html">HVAC Maintenance Cost</a>
-              </h5>
-              <p>Elit adipi massa diam in dignissim. Sagittis pulvinar ut dis venenatis nunc nunc vitae aliquam
-                vestibulum... <span><a href="index.html" class="text-decoration-underline fst-italic">Read
-                    more</a></span> </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <div class="card-item">
-            <div class="card border-0 bg-transparent">
-              <div class="card-image position-relative">
-                <a href="index.html"><img src="images/blog3.jpg" alt="post-img" class="post-image img-fluid"></a>
-              </div>
-            </div>
-            <div class="card-body p-0 mt-2">
-              <span class="text-capitalize text-black-50">Jan 30, 2024</span>
-              <h5 class="mt-2">
-                <a href="index.html">Why to clean AC of Home</a>
-              </h5>
-              <p>Elit adipi massa diam in dignissim. Sagittis pulvinar ut dis venenatis nunc nunc vitae aliquam
-                vestibulum... <span><a href="index.html" class="text-decoration-underline fst-italic">Read
-                    more</a></span> </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <div class="card-item">
-            <div class="card border-0 bg-transparent">
-              <div class="card-image position-relative">
-                <a href="index.html"><img src="images/blog4.jpg" alt="post-img" class="post-image img-fluid"></a>
-              </div>
-            </div>
-            <div class="card-body p-0 mt-2">
-              <span class="text-capitalize text-black-50">Jan 30, 2024</span>
-              <h5 class="mt-2">
-                <a href="index.html">Tips for cleaning AC</a>
-              </h5>
-              <p>Elit adipi massa diam in dignissim. Sagittis pulvinar ut dis venenatis nunc nunc vitae aliquam
-                vestibulum... <span><a href="index.html" class="text-decoration-underline fst-italic">Read
-                    more</a></span> </p>
-            </div>
-          </div>
-        </div>
+        <?php
+          include 'Models/noticia.php';
+          $not = new Noticia() ;
+          $not->listar_recientes() ;
+        ?>
       </div>
     </div>
   </section>
@@ -770,5 +684,5 @@
 
 </body>
 
-<?php include 'footer.php' ?>
+<?php include 'Views/footer.php' ?>
 

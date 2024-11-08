@@ -1,9 +1,12 @@
+<?php
+require_once "routes.php";
+?>
 <footer id="footer">
-  <script src="js/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript" src="js/plugins.js"></script>
+  <script src="<?php echo BASE_URL?>/Views/js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="<?php echo BASE_URL?>/Views/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="<?php echo BASE_URL?>/Views/js/plugins.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="<?php echo BASE_URL?>/Views/js/script.js"></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
@@ -12,7 +15,7 @@
         <div class="col-lg-3 col-md-6 pb-3">
           <div class="footer-menu">
             <a class="navbar-brand" href="index.html">
-              <img src="images/main-logo.png" class="logo img-fluid">
+              <img src="<?php echo BASE_URL?>/Views/images/main-logo.png" class="logo img-fluid">
             </a>
             <ul class="menu-list d-flex flex-column list-unstyled mt-3">
               <li class="fw-medium text-capitalize d-flex align-items-center">
