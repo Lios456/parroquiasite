@@ -1,9 +1,7 @@
 <?php
-require_once "../routes.php";
-echo BASE_URL;
-echo HEAD;
-include HEAD;
-include 'Models/noticia.php';
+require_once __DIR__ . '/../routes.php';
+include 'head.php';
+include __DIR__ . '/../Models/noticia.php';
 ?>
 
 <div class="content">
@@ -37,5 +35,5 @@ try{
       });
     </script>
 <?php
-include "footer.php";
+include 'footer.php'
 ?>

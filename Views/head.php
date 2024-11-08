@@ -1,5 +1,5 @@
 <?php
-require_once "routes.php";
+require_once __DIR__ . '/../routes.php';
 ?>
 
 <!DOCTYPE html>
@@ -45,7 +45,7 @@ require_once "routes.php";
     <div class="container">
       <div class="d-flex justify-content-between align-items-center py-3">
         <a class="navbar-brand" href="index.php">
-          <img src="Views\images\main-logo.png" class="logo img-fluid" width="15%">
+          <img src="<?php echo BASE_URL?>/Views/images/main-logo.png" class="logo img-fluid" width="15%">
         </a>
         <ul class="info d-flex flex-wrap justify-content-end align-items-center list-unstyled m-0">
           <li class="phone text-black fw-medium text-capitalize d-flex align-items-center ms-4">
@@ -84,10 +84,10 @@ require_once "routes.php";
               </a>
             </li>
             <li class="nav-item px-3 py-1 py-lg-0">
-              <a class="nav-link active p-0" aria-current="page" href="index.php  ">Home</a>
+              <a class="nav-link active p-0" aria-current="page" href="<?php echo BASE_URL?>/index.php">Home</a>
             </li>
             <li class="nav-item px-3 py-1 py-lg-0 dropdown">
-              <a class="nav-link p-0 dropdown-toggle" data-bs-toggle="dropdown" href="index.php" role="button"
+              <a class="nav-link p-0 dropdown-toggle" data-bs-toggle="dropdown" href="<?php echo BASE_URL?>/index.php" role="button"
                 aria-expanded="false">Celebraciones <svg width="20" height="20" style="vertical-align: sub;">
                   <use xlink:href="#arrow-down"></use>
                 </svg></a>
@@ -99,16 +99,16 @@ require_once "routes.php";
               </ul>
             </li>
             <li class="nav-item px-3 py-1 py-lg-0">
-              <a class="nav-link p-0" href="about.php">Sobre Nosotros</a>
+              <a class="nav-link p-0" href="<?php echo BASE_URL?>/Views/about.php">Sobre Nosotros</a>
             </li>
             <li class="nav-item px-3 py-1 py-lg-0">
-              <a class="nav-link p-0" href="noticias.php">Noticias</a>
+              <a class="nav-link p-0" href="<?php echo BASE_URL?>/Views/noticias.php">Noticias</a>
             </li>
             <li class="nav-item px-3 py-1 py-lg-0">
-              <a class="nav-link p-0" href="catequesis.php">Catequesis</a>
+              <a class="nav-link p-0" href="<?php echo BASE_URL?>/Views/catequesis.php">Catequesis</a>
             </li>
             <li class="nav-item px-3 py-1 py-lg-0">
-              <a class="nav-link p-0" href="contacto.php">Contacto</a>
+              <a class="nav-link p-0" href="<?php echo BASE_URL?>/Views/contacto.php">Contacto</a>
             </li>
             <li class="nav-item search-dropdown py-3 py-lg-0 ms-3 ms-lg-5 dropdown">
               <a class="nav-link p-0 search dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"

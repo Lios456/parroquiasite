@@ -1,5 +1,5 @@
 <?php
-  include "Views/head.php";
+  include 'Views/head.php';;
 ?>
 
 

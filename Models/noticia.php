@@ -1,5 +1,5 @@
 <?php
-include "dbconfig.php";
+include __DIR__ . '/../dbconfig.php';
 
 class Noticia{
     public $id;

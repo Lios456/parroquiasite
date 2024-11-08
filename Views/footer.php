@@ -1,5 +1,5 @@
 <?php
-require_once "routes.php";
+require_once __DIR__ . '/../routes.php';
 ?>
 <footer id="footer">
   <script src="<?php echo BASE_URL?>/Views/js/jquery-1.11.0.min.js"></script>
