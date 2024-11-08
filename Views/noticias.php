@@ -18,7 +18,7 @@ try{
 <br><br><br><br><br>
 <center><h1 class="h1">Ingreso de noticias</h1></center>
 <div class="d-flex justify-content-center">
-<form action="Controllers/agregarnoticia.php" method="post" name="noticiaform">
+<form action="<?php echo BASE_URL . '/Controllers/agregarnoticia.php' ?>" method="post" name="noticiaform">
   <input type="text" class="form-control" name="titulo" placeholder="Título">
 <textarea id="summernote" name="detalle"></textarea>
 <button type="submit">Enviar</button>

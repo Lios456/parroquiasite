@@ -29,12 +29,32 @@ require_once __DIR__ . '/../routes.php';
         </div>
         <div class="col-lg-3 col-md-6 pb-3">
           <div class="footer-menu">
-            <h5 class=" widget-title py-2 mt-3 fw-semibold">HVAC Services</h5>
+            <h5 class=" widget-title py-2 mt-3 fw-semibold">Misas</h5>
             <ul class="menu-list d-flex flex-column list-unstyled">
               <li class="fw-medium text-capitalize d-flex align-items-center">
                 <svg class="text-primary me-1" width="16" height="16">
                   <use xlink:href="#check-circle"></use>
-                </svg><a href="#"> HVAC Installations </a>
+                </svg><a href="#"> Jueves 18:00 </a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> Sábado 18:00 </a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> Domingo 8:00 </a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> Domingo 10:00 </a>
+              </li>
+              <li class="fw-medium text-capitalize d-flex align-items-center">
+                <svg class="text-primary me-1" width="16" height="16">
+                  <use xlink:href="#check-circle"></use>
+                </svg><a href="#"> Domingo 18:00 </a>
               </li>
             </ul>
           </div>

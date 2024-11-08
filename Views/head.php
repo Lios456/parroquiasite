@@ -44,7 +44,7 @@ require_once __DIR__ . '/../routes.php';
   <nav class="header-top">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center py-3">
-        <a class="navbar-brand" href="index.php">
+        <a class="navbar-brand" href="<?php echo BASE_URL?>/index.php">
           <img src="<?php echo BASE_URL?>/Views/images/main-logo.png" class="logo img-fluid" width="15%">
         </a>
         <ul class="info d-flex flex-wrap justify-content-end align-items-center list-unstyled m-0">
@@ -79,7 +79,7 @@ require_once __DIR__ . '/../routes.php';
         <div class="offcanvas-body align-items-center justify-content-center">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item px-5 py-1 py-lg-0">
-              <a href="#" class="btn btn-primary btn-slide hover-slide-right" style="width:100%;font-size:12px">
+              <a href="<?php echo BASE_URL?>/Views/cambiofiesta.php" class="btn btn-primary btn-slide hover-slide-right" style="width:100%;font-size:12px">
                 <span>Cambio de Fecha Celebración Religiosa</span>
               </a>
             </li>
@@ -92,9 +92,9 @@ require_once __DIR__ . '/../routes.php';
                   <use xlink:href="#arrow-down"></use>
                 </svg></a>
               <ul class="dropdown-menu dropdown-menu-end animate slide mt-3 border-0 shadow">
-                <li><a href="santisimacruz.php" class="dropdown-item">Santísima Cruz </a>
+                <li><a href="<?php echo BASE_URL?>/Views/santisimacruz.php" class="dropdown-item">Santísima Cruz </a>
                 </li>
-                <li><a href="index.php" class="dropdown-item">Santísima Trinidad </a>
+                <li><a href="<?php echo BASE_URL?>/Views/santisimatrinidad.php" class="dropdown-item">Santísima Trinidad </a>
                 </li>
               </ul>
             </li>

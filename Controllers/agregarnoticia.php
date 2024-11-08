@@ -1,5 +1,5 @@
 <?php
-include('Models\noticia.php');
+include __DIR__ . "/../Models/noticia.php";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $noticia = new Noticia();
     $noticia->titulo = $_POST["titulo"] ?? null;
