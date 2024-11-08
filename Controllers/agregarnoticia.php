@@ -8,7 +8,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //$noticia->autor = $_POST["autor"] ?? null;
 
     if ($noticia->insertar($noticia)) {
-        echo 'Toastify({
+        echo '<script>'. 
+            'Toastify({
                         text: "Éxito al registrar la noticia",
                         duration: 500,
                         newWindow: true,
@@ -20,7 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             background: "linear-gradient(to right, #00b09b, #96c93d)",
                         },
                         onClick: function(){} // Callback after click
-                    }).showToast();';
+                    }).showToast();' . 
+                    '</script>';
     } else {
         echo "Fallo al registrar la noticia";
     }
