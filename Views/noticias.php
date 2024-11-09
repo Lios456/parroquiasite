@@ -5,7 +5,7 @@ include __DIR__ . '/../Models/noticia.php';
 require_once __DIR__ . '/../routes.php';
 ?>
 
-<div class="container row">
+<div class="container col">
 <?php
 try{
   $a = new Noticia();

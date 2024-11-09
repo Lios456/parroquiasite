@@ -22,7 +22,7 @@ require_once __DIR__ . '/../routes.php';
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
   <!-- Style Sheet ================================================== -->
-  <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL?>\Views\style.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL ?>\Views\style.css">
 
   <!-- Google Fonts ================================================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,14 +38,18 @@ require_once __DIR__ . '/../routes.php';
 
   <!-- TOASTIFY -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
+
 </head>
 
 <header id="header">
   <nav class="header-top">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center py-3">
-        <a class="navbar-brand" href="<?php echo BASE_URL?>/index.php">
-          <img src="<?php echo BASE_URL?>/Views/images/main-logo.png" class="logo img-fluid" width="15%">
+        <a class="navbar-brand" href="<?php echo BASE_URL ?>/index.php">
+          <img src="<?php echo BASE_URL ?>/Views/images/main-logo.png" class="logo img-fluid" width="15%">
         </a>
         <ul class="info d-flex flex-wrap justify-content-end align-items-center list-unstyled m-0">
           <li class="phone text-black fw-medium text-capitalize d-flex align-items-center ms-4">
@@ -79,36 +83,36 @@ require_once __DIR__ . '/../routes.php';
         <div class="offcanvas-body align-items-center justify-content-center">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item px-5 py-1 py-lg-0">
-              <a href="<?php echo BASE_URL?>/Views/cambiofiesta.php" class="btn btn-primary btn-slide hover-slide-right" style="width:100%;font-size:12px">
+              <a href="<?php echo BASE_URL ?>/Views/cambiofiesta.php" class="btn btn-primary btn-slide hover-slide-right" style="width:100%;font-size:12px">
                 <span>Cambio de Fecha Celebración Religiosa</span>
               </a>
             </li>
             <li class="nav-item px-3 py-1 py-lg-0">
-              <a class="nav-link active p-0" aria-current="page" href="<?php echo BASE_URL?>/index.php">Home</a>
+              <a class="nav-link active p-0" aria-current="page" href="<?php echo BASE_URL ?>/index.php">Home</a>
             </li>
             <li class="nav-item px-3 py-1 py-lg-0 dropdown">
-              <a class="nav-link p-0 dropdown-toggle" data-bs-toggle="dropdown" href="<?php echo BASE_URL?>/index.php" role="button"
+              <a class="nav-link p-0 dropdown-toggle" data-bs-toggle="dropdown" href="<?php echo BASE_URL ?>/index.php" role="button"
                 aria-expanded="false">Celebraciones <svg width="20" height="20" style="vertical-align: sub;">
                   <use xlink:href="#arrow-down"></use>
                 </svg></a>
               <ul class="dropdown-menu dropdown-menu-end animate slide mt-3 border-0 shadow">
-                <li><a href="<?php echo BASE_URL?>/Views/santisimacruz.php" class="dropdown-item">Santísima Cruz </a>
+                <li><a href="<?php echo BASE_URL ?>/Views/santisimacruz.php" class="dropdown-item">Santísima Cruz </a>
                 </li>
-                <li><a href="<?php echo BASE_URL?>/Views/santisimatrinidad.php" class="dropdown-item">Santísima Trinidad </a>
+                <li><a href="<?php echo BASE_URL ?>/Views/santisimatrinidad.php" class="dropdown-item">Santísima Trinidad </a>
                 </li>
               </ul>
             </li>
             <li class="nav-item px-3 py-1 py-lg-0">
-              <a class="nav-link p-0" href="<?php echo BASE_URL?>/Views/about.php">Sobre Nosotros</a>
+              <a class="nav-link p-0" href="<?php echo BASE_URL ?>/Views/about.php">Sobre Nosotros</a>
             </li>
             <li class="nav-item px-3 py-1 py-lg-0">
-              <a class="nav-link p-0" href="<?php echo BASE_URL?>/Views/noticias.php">Noticias</a>
+              <a class="nav-link p-0" href="<?php echo BASE_URL ?>/Views/noticias.php">Noticias</a>
             </li>
             <li class="nav-item px-3 py-1 py-lg-0">
-              <a class="nav-link p-0" href="<?php echo BASE_URL?>/Views/catequesis.php">Catequesis</a>
+              <a class="nav-link p-0" href="<?php echo BASE_URL ?>/Views/catequesis.php">Catequesis</a>
             </li>
             <li class="nav-item px-3 py-1 py-lg-0">
-              <a class="nav-link p-0" href="<?php echo BASE_URL?>/Views/contacto.php">Contacto</a>
+              <a class="nav-link p-0" href="<?php echo BASE_URL ?>/Views/contacto.php">Contacto</a>
             </li>
             <li class="nav-item search-dropdown py-3 py-lg-0 ms-3 ms-lg-5 dropdown">
               <a class="nav-link p-0 search dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"

@@ -1,6 +1,7 @@
 <?php
 include __DIR__ . '/../dbconfig.php';
-class Mensaje {
+class Mensaje
+{
     public $id;
     public $name;
     public $email;
@@ -8,7 +9,8 @@ class Mensaje {
     public $address;
     public $message;
 
-    public function agregar($data){
+    public function agregar($data)
+    {
         $mensaje = ORM::forTable('mensajes')->create();
         $mensaje->name = $data->name;
         $mensaje->email = $data->email;
@@ -16,11 +18,12 @@ class Mensaje {
         $mensaje->address = $data->address;
         $mensaje->message = $data->message;
         $mensaje->save();
-        return true;    
+        return true;
     }
 
-    public function listar(){
-        $mensajes = ORM::forTable('mensajes')->select_many()->asArray();
+    public function listar()
+    {
+        $mensajes = ORM::forTable('mensajes')->findArray();
+        return json_encode($mensajes);
     }
 }
-?>
