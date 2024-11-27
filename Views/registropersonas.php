@@ -1,14 +1,14 @@
-<?php 
+<?php
 session_start();
-include 'head.php'; 
+include 'head.php';
 require_once __DIR__ . '/../routes.php';
 ?>
 
-<div class="container">
+<div class="container ">
     <center>
         <h1 class="h1">REGISTRO DE PERSONAS</h1>
     </center>
-    <div class="container w-50">
+    <div class="container d-flex justify-content-center">
         <form action="<?php echo BASE_URL . '/Controllers/agregarpersona.php' ?>" method="post">
             <div class="row">
                 <div class="col-6">
@@ -23,9 +23,15 @@ require_once __DIR__ . '/../routes.php';
                     <label for="nombre">Nombres:</label>
                     <input type="text" class="form-control" name="nombre" placeholder="Nombres" required pattern="^[a-zA-ZÀ-ÿ\s]+$">
                     <label for="apellido2">Apellido Materno:</label>
-                    <input type="text" class="form-control" name="apellido2" placeholder="Apellido Materno" required pattern="^[a-zA-ZÀ-ÿ\s]+$"> 
+                    <input type="text" class="form-control" name="apellido2" placeholder="Apellido Materno" required pattern="^[a-zA-ZÀ-ÿ\s]+$">
                 </div>
-                <button class="btn btn-success" type="submit">Enviar</button>
+                <div style=" width:50%; height:3rem">
+
+                </div>
+                <div class="container d-flex justify-content-center">
+                    <button class="btn btn-success rounded" type="submit">Enviar</button>
+                </div>
+
             </div>
         </form>
     </div>

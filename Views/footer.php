@@ -17,14 +17,6 @@ require_once __DIR__ . '/../routes.php';
             <a class="navbar-brand" href="index.html">
               <img src="<?php echo BASE_URL?>/Views/images/main-logo.png" class="logo img-fluid">
             </a>
-            <ul class="menu-list d-flex flex-column list-unstyled mt-3">
-              <li class="fw-medium text-capitalize d-flex align-items-center">
-                <svg class="text-primary me-1" width="16" height="16">
-                  <use xlink:href="#check-circle"></use>
-                </svg><a href="#"> Home</a>
-              </li>
-
-            </ul>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 pb-3">
@@ -61,12 +53,12 @@ require_once __DIR__ . '/../routes.php';
         </div>
         <div class="col-lg-3 col-md-6 pb-3">
           <div class="footer-menu">
-            <h5 class=" widget-title py-2 mt-3 fw-semibold">Other Services</h5>
+            <h5 class=" widget-title py-2 mt-3 fw-semibold">Otra secciones</h5>
             <ul class="menu-list d-flex flex-column list-unstyled">
               <li class="fw-medium text-capitalize d-flex align-items-center">
                 <svg class="text-primary me-1" width="16" height="16">
                   <use xlink:href="#check-circle"></use>
-                </svg><a href="#"> Ductwork Inspection and Cleaning </a>
+                </svg><a href="#">Comunidad Juvenil</a>
               </li>
             </ul>
           </div>
@@ -147,6 +139,7 @@ require_once __DIR__ . '/../routes.php';
       </div>
     </div>
 </footer>
+<!-- TOASTIFY INTEGRATION -->
 <script>
     <?php if (isset($_SESSION['toast_message'])): ?>
         Toastify({

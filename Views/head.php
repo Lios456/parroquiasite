@@ -11,36 +11,41 @@ require_once __DIR__ . '/../routes.php';
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!--Bootstrap ================================================== -->
+  <!-- ================================================== Bootstrap ================================================== -->
   <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL ?>\Views\css\bootstrap.min.css">
 
-  <!--vendor css ================================================== -->
+  <!-- ================================================== vendor css ================================================== -->
   <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL ?>\Views\css\vendor.css">
 
 
-  <!--Link Swiper's CSS ================================================== -->
+  <!-- ================================================== Link Swiper's CSS ================================================== -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-  <!-- Style Sheet ================================================== -->
+  <!-- ================================================== Style Sheet ================================================== -->
   <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL ?>\Views\style.css">
 
-  <!-- Google Fonts ================================================== -->
+  <!-- ================================================== Google Fonts ================================================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 
-  <!-- SUMMERNOTE ============================================== -->
+  <!-- ================================================== SUMMERNOTE ============================================== -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/summernote@0.9.0/dist/summernote-lite.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/summernote@0.9.0/dist/summernote-lite.min.js"></script>
 
-  <!-- TOASTIFY -->
+  <!-- ================================================== TOASTIFY ================================================== -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
+  
+  <!-- ================================================== GRID JS ================================================== -->
   <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
+
+  <!-- ================================================== CSS LOGIN ================================================== -->
+  <link rel="stylesheet" href="<?php echo BASE_URL ?>/Views/css/login.css">
 
 </head>
 
@@ -81,10 +86,14 @@ require_once __DIR__ . '/../routes.php';
             aria-label="Close" data-bs-target="#bdNavbar"></button>
         </div>
         <div class="offcanvas-body align-items-center justify-content-center">
-          <ul class="navbar-nav mb-2 mb-lg-0">
+          <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
             <li class="nav-item px-5 py-1 py-lg-0">
               <a href="<?php echo BASE_URL ?>/Views/cambiofiesta.php" class="btn btn-primary btn-slide hover-slide-right" style="width:100%;font-size:12px">
-                <span>Cambio de Fecha Celebración Religiosa</span>
+                <span>Cambio de</span>
+                <br>
+                <span>Fecha Celebración</span>
+                <br>
+                <span>Religiosa</span>
               </a>
             </li>
             <li class="nav-item px-3 py-1 py-lg-0">
@@ -113,6 +122,9 @@ require_once __DIR__ . '/../routes.php';
             </li>
             <li class="nav-item px-3 py-1 py-lg-0">
               <a class="nav-link p-0" href="<?php echo BASE_URL ?>/Views/contacto.php">Contacto</a>
+            </li>
+            <li class="nav-item px-3 py-1 py-lg-0">
+              <a class="nav-link p-0" href="<?php echo BASE_URL ?>/Views/login.php">Ingresar</a>
             </li>
             <li class="nav-item search-dropdown py-3 py-lg-0 ms-3 ms-lg-5 dropdown">
               <a class="nav-link p-0 search dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
