@@ -44,9 +44,6 @@ require_once __DIR__ . '/../routes.php';
   <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
 
-  <!-- ================================================== CSS LOGIN ================================================== -->
-  <link rel="stylesheet" href="<?php echo BASE_URL ?>/Views/css/login.css">
-
 </head>
 
 <header id="header">

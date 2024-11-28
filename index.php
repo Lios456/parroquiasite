@@ -1,139 +1,139 @@
 <?php
-  include 'Views/head.php';;
+include 'Views/head.php';
+;
 ?>
 
 
-  <section id="billboard">
-    <div class="row align-items-center g-0z" style="background-color: #183f8a">
-      <div class="col-lg-6" >
-        <div class="m-4 p-4 m-lg-5 p-lg-5">
-          <h3 class="fw-bold h3 text-white">Diócesis de Latacunga</h3>
-          <h2 class="display-4 fw-bold text-white my-4">Parroquia Eclesiástica "Santísima Trinidad" La Laguna</h2>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <img src="Views/images/iglesia/17.jpg" alt="img" class="img-fluid">
+<section id="billboard">
+  <div class="row align-items-center g-0z" style="background-color: #183f8a">
+    <div class="col-lg-6">
+      <div class="m-4 p-4 m-lg-5 p-lg-5">
+        <h3 class="fw-bold h3 text-white">Diócesis de Latacunga</h3>
+        <h2 class="display-4 fw-bold text-white my-4">Parroquia Eclesiástica "Santísima Trinidad" La Laguna</h2>
       </div>
     </div>
-  </section>
-  <hr>
+    <div class="col-lg-6">
+      <img src="Views/images/iglesia/17.jpg" alt="img" class="img-fluid">
+    </div>
+  </div>
+</section>
+<hr>
 <!-- SECCIÓN DE PÁRROCOS -->
-  <section id="brands" class="padding-small">
-    <div class="container">
-      <h6 class="fst-italic text-capitalize mb-4">  Párrocos
-      </h6>
-      <div class="row">
-        <div class="col my-4">
-          <a href="">Mons. Lorenzo Voltonili</a>
-        </div>
-        <div class="col my-4">
-          <a href="">Mons. Victoriano Naranjo</a>
-        </div>
-        <div class="col my-4">
-          <a href="">✚ P. Emiliano Jácome ✚</a>
-        </div>
-        <div class="col my-4">
-          <a href="">P. José Luis Tapia</a>
-        </div>
-        <div class="col my-4">
-          <a href="">P. Cristian Santana</a>
-        </div>
+<section id="brands" class="padding-small">
+  <div class="container">
+    <h6 class="fst-italic text-capitalize mb-4"> Párrocos
+    </h6>
+    <div class="row">
+      <div class="col my-4">
+        <a href="">Mons. Lorenzo Voltonili</a>
+      </div>
+      <div class="col my-4">
+        <a href="">Mons. Victoriano Naranjo</a>
+      </div>
+      <div class="col my-4">
+        <a href="">✚ P. Emiliano Jácome ✚</a>
+      </div>
+      <div class="col my-4">
+        <a href="">P. José Luis Tapia</a>
+      </div>
+      <div class="col my-4">
+        <a href="">P. Cristian Santana</a>
       </div>
     </div>
-    <div class="container">
-      <h6 class="fst-italic text-capitalize mb-4">  Vicario
-      </h6>
-      <div class="row">
-        <div class="col my-4">
-          <a href="">P. Luis Gutiérrez</a>
-        </div>
+  </div>
+  <div class="container">
+    <h6 class="fst-italic text-capitalize mb-4"> Vicario
+    </h6>
+    <div class="row">
+      <div class="col my-4">
+        <a href="">P. Luis Gutiérrez</a>
       </div>
     </div>
-  </section>
-  <hr>
+  </div>
+</section>
+<hr>
 
 <!-- SECCIÓN DE NOTICIAS -->
-  <section id="blog">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
-        <div>
-          <h6><span class="text">|</span>Noticias</h6>
-          <h3 class="display-6 fw-semibold">Recientes</h3>
-        </div>
-        <div>
-          <a href="Views/noticias.php" class="btn btn-primary btn-slide hover-slide-right">
-            <span>Ver Todas</span>
-          </a>
-        </div>
+<section id="blog">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <div>
+        <h6><span class="text">|</span>Noticias</h6>
+        <h3 class="display-6 fw-semibold">Recientes</h3>
       </div>
-      <div class="row mt-5">
-        <?php
-          include 'Models/noticia.php';
-          $not = new Noticia() ;
-          $not->listar_recientes() ;
-        ?>
+      <div>
+        <a href="Views/noticias.php" class="btn btn-primary btn-slide hover-slide-right">
+          <span>Ver Todas</span>
+        </a>
       </div>
     </div>
-  </section>
+    <div class="row mt-5" id="noticias">
+
+    </div>
+  </div>
+</section>
 <hr>
 <!-- SECCIÓN DE CATEQUESIS -->
-  <section id="about-us">
-    <div class="container">
-      <div class="row g-md-5 align-items-center">
-        <div class="col-lg-5">
-          <div class="imageblock position-relative">
+<section id="about-us">
+  <div class="container">
+    <div class="row g-md-5 align-items-center">
+      <div class="col-lg-5">
+        <div class="imageblock position-relative">
           <video class="img-fluid" src="videos/video1.mp4" autoplay loop muted>
           </video>
 
           <div class="video-player position-absolute top-50 start-50 translate-middle">
-              <a type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="play-btn position-relative">
-                <svg class="play-icon text-primary my-3" width="80" height="80">
-                  <use xlink:href="#play-button"></use>
-                </svg>
-              </a>
-            </div>
+            <a type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="play-btn position-relative">
+              <svg class="play-icon text-primary my-3" width="80" height="80">
+                <use xlink:href="#play-button"></use>
+              </svg>
+            </a>
+          </div>
 
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="videoModalLabel">Video</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <video class="img-fluid" src="videos/video1.mp4" autoplay loop muted controls></video>
-                  </div>
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="videoModalLabel">Video</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <video class="img-fluid" src="videos/video1.mp4" autoplay loop muted controls></video>
                 </div>
               </div>
             </div>
-
-            </a>
           </div>
-        </div>
-        <div class="col-lg-7 mt-5">
-          <h6><span class="text-primary">|</span>Sobre Nosotros</h6>
-          <h3 class="display-6 fw-semibold mb-4">Ven y descubre el camino de la salvacón y de la fe</h3>
-          <p>La Parroquia Eclesiástica "Santísima Trinidad" La Laguna es una comunidad vibrante y acogedora, dedicada a la fe cristiana y al servicio de los demás. Nuestra misión es ser un lugar de encuentro y apoyo espiritual para todos aquellos que buscan acercarse a Dios y fortalecer su relación con Él.           
-          </p>
-          <p class="fw-semibold m-0">Nuestra misión</p>
-          <p>Aspiramos a ser una comunidad vibrante y compasiva que refleje el amor y la misericordia de Dios. Nuestra visión es:
-          </p>
-          <p><strong>- Crecer en Fe</strong></p>
-          <p><strong>- Servir a la Comunidad</strong></p>
-          <p><strong>- Promover la Unidad</strong></p>
 
-          <a href="index.php" class="btn btn-primary btn-slide hover-slide-right mt-4">
-            <span>Más sobre nosotros</span>
           </a>
         </div>
       </div>
+      <div class="col-lg-7 mt-5">
+        <h6><span class="text-primary">|</span>Sobre Nosotros</h6>
+        <h3 class="display-6 fw-semibold mb-4">Ven y descubre el camino de la salvacón y de la fe</h3>
+        <p>La Parroquia Eclesiástica "Santísima Trinidad" La Laguna es una comunidad vibrante y acogedora, dedicada a la
+          fe cristiana y al servicio de los demás. Nuestra misión es ser un lugar de encuentro y apoyo espiritual para
+          todos aquellos que buscan acercarse a Dios y fortalecer su relación con Él.
+        </p>
+        <p class="fw-semibold m-0">Nuestra misión</p>
+        <p>Aspiramos a ser una comunidad vibrante y compasiva que refleje el amor y la misericordia de Dios. Nuestra
+          visión es:
+        </p>
+        <p><strong>- Crecer en Fe</strong></p>
+        <p><strong>- Servir a la Comunidad</strong></p>
+        <p><strong>- Promover la Unidad</strong></p>
+
+        <a href="index.php" class="btn btn-primary btn-slide hover-slide-right mt-4">
+          <span>Más sobre nosotros</span>
+        </a>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
 <!-- CONTACTO -->
 
-  <!--
+<!--
   <section id="testimonial" class="padding-small">
     <div class="container">
       <h6><span class="text-primary">|</span>Testimonials</h6>
@@ -658,31 +658,53 @@
     </div>
   </section>
 -->
-  <!-- Video Popup -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
+<!-- Video Popup -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
 
-      <div class="modal-content">
+    <div class="modal-content">
 
-        <div class="modal-body">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="bi" width="40"
-              height="40">
-              <use xlink:href="#close-sharp"></use>
-            </svg></button>
-          <div class="ratio ratio-16x9">
-            <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
-              allow="autoplay"></iframe>
-          </div>
+      <div class="modal-body">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="bi" width="40"
+            height="40">
+            <use xlink:href="#close-sharp"></use>
+          </svg></button>
+        <div class="ratio ratio-16x9">
+          <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
         </div>
-
       </div>
 
     </div>
+
   </div>
+</div>
 
 
 </body>
 
-<?php include 'Views/footer.php' ?>
+<script>
+  // Mostrar los json como tarjetas
+  noticias_json = <?php require_once "Controllers\listarnoticiasvisitante.php"; ?>;
+  container = document.getElementById('noticias');
+  noticias_json.forEach(element => {
+    const tarjeta = `
+        <div class="container">
+          <div class="card-item">
+            <div class="card-body p-0 mt-2">
+              <span class="text-capitalize text-black-50">${element.fecha_not}</span>
+              <h5 class="mt-2">
+                <a href="Views/noticia_v.php?id=${element.id_not}">${element.titulo_not.replace(/<\/?[^>]+(>|$)/g, " ")} </a>
+              </h5>
+              <p><span>
+              <a href="Views/noticia_v.php?id=${element.id_not}" class="text-decoration-underline fst-italic">Leer Más</a>
+              </span> </p>
+            </div>
+          </div>
+        </div>
+        `;
+    container.innerHTML += tarjeta;
+  });
 
+</script>
+
+<?php include 'Views/footer.php' ?>
